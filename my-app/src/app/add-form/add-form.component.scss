@@ -1,0 +1,38 @@
+.form-class-container{
+  display: flex;
+  margin-top: 3rem;
+  justify-content: center;
+
+  & .form-class {
+    display: flex;
+    flex-direction: column;
+    
+
+    & .div-form-class{
+      display: flex;
+      flex-direction: column;
+      margin-top: 0.2rem;
+
+      & .label{
+
+      }
+
+      & .input{
+
+      }
+
+      &.radio{
+        flex-direction: row;
+      }
+
+    }
+
+    & .submit-class{
+      margin-top: 1rem;
+
+    }
+
+  }
+
+ 
+}

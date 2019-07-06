@@ -1,0 +1,19 @@
+.menu__container {
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lightgrey;
+
+  & .menu__items {
+    margin: 0;
+    font-family: cursive;
+    
+    &:hover {
+      color: gray;
+    }
+
+  } 
+  
+}

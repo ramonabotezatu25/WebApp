@@ -1,0 +1,35 @@
+<div class='form-class-container'>
+  <form class='form-class' [formGroup] = 'formGroup'>
+    <div class="div-form-class">
+      <label class='label'>First name</label>
+      <input class='input' type="text" formControlName='firstname'> 
+    </div>
+    <div *ngIf='formGroup.controls.firstname.errors?.minlength'>
+      <p>Pattern gresit</p>
+    </div>
+  
+    <div class="div-form-class">
+      <label class='label'>Last name</label>
+      <input class='input' type="text" formControlName='lastname'> 
+    </div>
+      
+    <div class="div-form-class">
+      <label class='label'>Project name</label>
+      <input class='input' type="text" formControlName='project'> 
+    </div>
+
+    <div class="div-form-class radio">
+      <input type="radio" name="position" value="manager" formControlName='position'> Manager
+      <input type="radio" name="position" value="employee" formControlName='position'> Employee
+    </div>
+
+    <div class="div-form-class" *ngIf="formGroup.controls.position.value==='employee'">
+      <select formControlName='manager'>
+        <option *ngFor="let manager of managersList" value="{{manager}}">{{manager}}</option>
+      </select>
+    </div>
+
+    <button [disabled]='!formGroup.valid' class= "submit-class" type='submit' (click)='submit()'>Submit</button>
+
+  </form>
+</div>
