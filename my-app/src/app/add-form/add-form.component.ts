@@ -1,4 +1,4 @@
-import { DataServiceService } from './../services/data-service.service';
+import { DataService } from './../services/data-service.service';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
@@ -11,7 +11,7 @@ export class AddFormComponent implements OnInit {
 
   public formGroup: FormGroup;
   public managersList: string[] =[];
-  constructor(private formBuilder: FormBuilder, private dataService: DataServiceService) { }
+  constructor(private formBuilder: FormBuilder, private dataService: DataService) { }
 
   ngOnInit() {
     this.initalizeForm();

@@ -1,30 +1,31 @@
 <div class='form-class-container'>
   <form class='form-class' [formGroup] = 'formGroup'>
     <div class="div-form-class">
-      <label class='label'>First name</label>
-      <input class='input' type="text" formControlName='firstname'> 
+      <label for='frstname' class='label'>First name</label>
+      <input id='frstname' class='input' type="text" formControlName='firstname'> 
     </div>
     <div *ngIf='formGroup.controls.firstname.errors?.minlength'>
-      <p>Pattern gresit</p>
+      <p class='errorMessage'>Pattern gresit</p>
     </div>
   
     <div class="div-form-class">
-      <label class='label'>Last name</label>
-      <input class='input' type="text" formControlName='lastname'> 
+      <label for='lstname' class='label'>Last name</label>
+      <input id='lstname' class='input' type="text" formControlName='lastname'> 
     </div>
       
     <div class="div-form-class">
-      <label class='label'>Project name</label>
-      <input class='input' type="text" formControlName='project'> 
+      <label for='projectName' class='label'>Project name</label>
+      <input id='projectName' class='input' type="text" formControlName='project'> 
     </div>
 
     <div class="div-form-class radio">
-      <input type="radio" name="position" value="manager" formControlName='position'> Manager
-      <input type="radio" name="position" value="employee" formControlName='position'> Employee
+      <input  id="managerRadioButton" type="radio" name="position" value="manager" formControlName='position'/> <label class='radio-label' for="managerRadioButton">Manager</label>
+      <input  id="employeeRadioButton" type="radio" name="position" value="employee" formControlName='position'/> <label class='radio-label' for="employeeRadioButton">Employee</label>
     </div>
 
     <div class="div-form-class" *ngIf="formGroup.controls.position.value==='employee'">
-      <select formControlName='manager'>
+      <select class='select' id=listOfManagers formControlName='manager'>
+        <option  value="" disabled selected>Select your manager</option>
         <option *ngFor="let manager of managersList" value="{{manager}}">{{manager}}</option>
       </select>
     </div>

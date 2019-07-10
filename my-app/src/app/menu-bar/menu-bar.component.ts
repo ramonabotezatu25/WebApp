@@ -9,18 +9,26 @@ import { Router } from '@angular/router';
 export class MenuBarComponent implements OnInit {
 
   public list: string[] = [];
-  constructor(private router: Router) { }
 
-  ngOnInit() {
+  constructor(private router: Router) { }
+  
+ngOnInit() {
     this.list.push('Dashboard');
     this.list.push("Managers");
     this.list.push("Employees");
 
   }
 
-  onButtonClick(event:string) {
+  openMenu(event:string) {
+    if(!document.getElementById(event.toLowerCase()).classList.contains('bold')){
+      document.getElementById(event.toLowerCase()).classList.add('bold');
+    } else {
+       document.getElementById(event.toLowerCase()).classList.remove('bold');
+      }
+    
     const route = event.toLowerCase();
     this.router.navigate([route]);
+    
   }
 
 }

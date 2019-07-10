@@ -6,7 +6,7 @@
   & .form-class {
     display: flex;
     flex-direction: column;
-    
+      
 
     & .div-form-class{
       display: flex;
@@ -17,22 +17,55 @@
 
       }
 
-      & .input{
-
+      & .input, select{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
       }
 
       &.radio{
         flex-direction: row;
+        margin-top: 0.5rem;
       }
 
     }
 
     & .submit-class{
-      margin-top: 1rem;
+      width: 100%;
+      margin-top: 0.5rem;
+      padding: 14px 20px;
+      margin:8px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #0044cc;
+      height: 3rem;
+      font-family: sans-serif;
+      font-size: 17px;
+      color: white;
 
+        &:hover {
+            color:  #6699ff
+        }
+
+      
     }
 
   }
 
- 
+}
+
+.radio-label{
+  padding-left:10px; 
+  padding-right: 25px;
+}
+
+.errorMessage{
+  font-style: italic;
+  margin-top: 5px;
+  color: red;
 }

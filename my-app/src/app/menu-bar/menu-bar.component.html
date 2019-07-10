@@ -1,3 +1,6 @@
 <div class='menu__container'>
-  <p class='menu__items buttons' *ngFor='let item of list' (click) = "onButtonClick(item)">{{item}} </p>
+  <p id='{{item.toLowerCase()}}' class='menu__items buttons' *ngFor='let item of list' (click) = "openMenu(item)">{{item}} </p>
 </div>
+
+
+<!-- [ngStyle]="{'font-weight': (item.bold ? '': 'bold')}" -->

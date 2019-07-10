@@ -9,6 +9,7 @@ import { EmployeesComponent } from './employees/employees.component';
 import { ManagersComponent } from './managers/managers.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AddFormComponent } from './add-form/add-form.component';
+import { ManagerDetailsComponent } from './manager-details/manager-details.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { AddFormComponent } from './add-form/add-form.component';
     ManagersComponent,
     DashboardComponent,
     AddFormComponent,
+    ManagerDetailsComponent,
   ],
   imports: [
     BrowserModule,

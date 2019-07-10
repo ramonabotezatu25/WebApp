@@ -1,0 +1,19 @@
+<div>
+    <form action="/action_page.php">
+      <label for="firstname">First Name</label>
+      <input #firstname type="text" id="firstname" name="firstname" value={{detailedInfoManager[0].firstname}}>
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" value={{detailedInfoManager[0].lastname}}>
+
+      <label for="project">Project Name</label>
+      <input type="text" id="lproject" name="lproject" value={{detailedInfoManager[0].project}}>
+  
+      <label for="team">Team</label>
+      <select id="team" name="team">
+        <option value="member"  *ngFor="let member of detailedInfoManager[0].team">{{member}}</option>
+      </select>
+    
+      <input type="submit" value="Submit">
+    </form>
+</div>

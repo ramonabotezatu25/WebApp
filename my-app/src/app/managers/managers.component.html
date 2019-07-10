@@ -1,3 +1,22 @@
-<p>
-  managers works!
-</p>
+<div class='div-class-container'>
+
+<div class='class-title'>
+    <h3> Managers </h3>
+</div>
+
+<div class ='grid grid-pa'>
+ <a *ngFor='let manager of managers' class='col-1-4'   (click)='onSelectedManager(manager.lastname)'>
+    <div class='module manager'>
+      <h4>{{manager.firstname}}  <br>  {{manager.lastname}}</h4>
+    </div>
+ </a>
+</div>
+
+</div>
+
+<manager-details *ngIf='selectedManager' [detailedInfoManager]='dataToSend'></manager-details>
+
+
+
+
+<!-- routerLink="/managers/{{manager.lastname}}" -->
