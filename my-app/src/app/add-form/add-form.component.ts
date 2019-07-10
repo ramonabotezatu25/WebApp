@@ -20,8 +20,8 @@ export class AddFormComponent implements OnInit {
 
   initalizeForm() {
     this.formGroup = this.formBuilder.group({
-      firstname: new FormControl('', [Validators.required, Validators.minLength(2)]),
-      lastname:  new FormControl('', [Validators.required, Validators.minLength(2)]),
+      firstname: new FormControl('', [Validators.required, Validators.minLength(5)]),
+      lastname:  new FormControl('', [Validators.required, Validators.minLength(5)]),
       project:  new FormControl('', [Validators.required, Validators.minLength(2)]),
       position: new FormControl(null, Validators.required),
       manager: new FormControl('')
