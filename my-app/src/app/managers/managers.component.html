@@ -7,7 +7,7 @@
 <div class ='grid grid-pa'>
  <a *ngFor='let manager of managers' class='col-1-4'   (click)='onSelectedManager(manager.lastname)'>
     <div class='module manager'>
-      <h4>{{manager.firstname}}  <br>  {{manager.lastname}}</h4>
+      <h4>{{manager.firstname | uppercase }}  <br>  {{manager.lastname}}</h4>
     </div>
  </a>
 </div>

@@ -7,7 +7,7 @@ import { isNgTemplate } from '@angular/compiler';
   providedIn: 'root'
 })
 export class DataService {
-
+  public selectedManager: string;
   public list: EmployeeInterface[] = [];
   public mock: EmployeeInterface = {firstname: "John" , lastname: "Doe", project: "LXCO", position:"manager", team:["Popa Ionel", "Mirel Mirel"]};
   public mock2: EmployeeInterface = {firstname: "Jack" , lastname: "Sparrow", project: "LXCO", position:"manager",  team:["Leustean Frumos", "Patrunjel Barbos"]};
@@ -34,6 +34,7 @@ export class DataService {
 
   getManagerByName(name : string) :EmployeeInterface[] {
     //return this.list.filter(item => item.lastname === name).map(item => item.firstname + ' ' + item.lastname + " " + item.project + " " + item.team);
+     this.selectedManager = name;
      this.newList=[];
      this.list.forEach(item =>{
       if(item.lastname.toLowerCase()===name.toLowerCase()){

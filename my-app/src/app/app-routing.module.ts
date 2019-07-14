@@ -4,8 +4,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 const routes: Routes = [
+  {
+    path: 'sidebar',
+    component: SidebarComponent
+  },
   {
     path: 'dashboard',
     component: DashboardComponent,

@@ -1,6 +1,6 @@
 
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule, FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +10,7 @@ import { ManagersComponent } from './managers/managers.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AddFormComponent } from './add-form/add-form.component';
 import { ManagerDetailsComponent } from './manager-details/manager-details.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { ManagerDetailsComponent } from './manager-details/manager-details.compo
     DashboardComponent,
     AddFormComponent,
     ManagerDetailsComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,9 @@ import { ManagerDetailsComponent } from './manager-details/manager-details.compo
   ],
   bootstrap: [AppComponent],
   exports: [
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ]
 })
 export class AppModule { }
