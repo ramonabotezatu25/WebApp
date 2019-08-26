@@ -2,7 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
@@ -13,6 +13,7 @@ import { AddFormComponent } from './add-form/add-form.component';
 import { ManagerDetailsComponent } from './manager-details/manager-details.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { MaterialModule } from './material.module';
     DashboardComponent,
     AddFormComponent,
     ManagerDetailsComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,9 @@ import { MaterialModule } from './material.module';
   ],
   bootstrap: [AppComponent],
   exports: [
-    
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ]
 })
 export class AppModule { }

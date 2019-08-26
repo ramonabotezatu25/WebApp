@@ -8,10 +8,14 @@
 
   & .menu__items {
     margin: 0;
-    font-family: cursive;
+    
     
     &:hover {
       color: gray;
+    }
+
+    &.bolded {
+      font-weight: 900;
     }
 
   } 

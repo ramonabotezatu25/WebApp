@@ -20,8 +20,11 @@ export class ManagersComponent implements OnInit{
   }
 
   onSelectedManager(event) {
-    //TO DO :  cand dai click pe un item si apoi selectezi altul tot dispare info
-    this.selectedManager = !this.selectedManager;
+    if (event === this.service.selectedManager && this.selectedManager === true) {
+      this.selectedManager = false;
+    } else {
+      this.selectedManager = true;
+    }
     if(this.selectedManager === true) {
       this.dataToSend = this.service.getManagerByName(event);
     }

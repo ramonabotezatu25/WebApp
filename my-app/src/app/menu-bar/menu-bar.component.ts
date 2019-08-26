@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class MenuBarComponent implements OnInit {
 
   public list: string[] = [];
+  public current: string;
 
   constructor(private router: Router) { }
   
@@ -20,12 +21,7 @@ ngOnInit() {
   }
 
   openMenu(event:string) {
-    if(!document.getElementById(event.toLowerCase()).classList.contains('bold')){
-      document.getElementById(event.toLowerCase()).classList.add('bold');
-    } else {
-       document.getElementById(event.toLowerCase()).classList.remove('bold');
-      }
-    
+    this.current = event;
     const route = event.toLowerCase();
     this.router.navigate([route]);
     

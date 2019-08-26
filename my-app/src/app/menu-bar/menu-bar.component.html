@@ -1,5 +1,5 @@
 <div class='menu__container'>
-  <p id='{{item.toLowerCase()}}' class='menu__items buttons' *ngFor='let item of list' (click) = "openMenu(item)">{{item}} </p>
+  <p id='{{item.toLowerCase()}}' [ngClass]='{"bolded":item===current}' class='menu__items buttons' *ngFor='let item of list' (click) = "openMenu(item)">{{item}} </p>
 </div>
 
 
