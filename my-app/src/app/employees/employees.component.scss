@@ -1,0 +1,162 @@
+
+/////////////////**Imports**/////////////////
+@import "src/assets/scss/variables.scss";
+////////////////**Variables**////////////////
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
+
+
+.ngx-datatable {
+  text-align: left;
+  width: 75%;
+  margin: 0 auto;
+
+}
+
+.ngx-column {
+  box-sizing: border-box;
+  padding: 0 1em;
+  border: solid 1px gray;
+  background: gray;
+  margin-bottom: 1em;
+}
+
+.ngx-row{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width: 800px) {
+//   .desktop-hidden {
+//     display: initial;
+//   }
+
+//   .mobile-hidden {
+//     display: none;
+//   }
+// }
+
+// @media screen and (min-width: 800px) {
+//   .desktop-hidden {
+//     display: none;
+//   }
+
+//   .mobile-hidden {
+//     display: initial;
+//   }
+// }
+
+// .datatable-body-cell-label {
+//   white-space: nowrap;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+// }
+
+// .tableMenu {
+//   display: -webkit-flex; /* Safari */
+//   -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+//   display: flex;
+//   flex-direction: row-reverse;
+//   button {
+//     margin-top: 0;
+//     margin-bottom: 0.625rem;
+//   }
+// }
+
+// .rowDetailTable {
+//   td {
+//     padding: 4px;
+//     vertical-align: top;
+//   }
+
+//   td.colName {
+//     font-weight: bold;
+//   }
+
+//   td.colData {
+//     padding-left: 10px;
+//     white-space: normal;
+//   }
+// }
+
+// .datatable-target-icon {
+//   position: absolute;
+// }
+// .datatable-icon-down {
+//   top: 0px;
+// }
+// .datatable-icon-up {
+//   top: 40px;
+// }
+// .dragFromLeft .datatable-target-icon {
+//   left: -13px;
+// }
+
+// .togglebutton label {
+//   color: $accent-color;
+// }
+
+// .toggleColumnsFormCheck.form-check .form-check-label {
+//   color: black;
+//   padding-left: 28px;
+//   padding-bottom: 4px;
+// }
+
+// :host ::ng-deep .datatable-body-row {
+//   cursor: pointer;
+// }
+
+// .datatable-pager {
+//   flex: auto !important;
+// }
+
+// .datatable{
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   display: -webkit-flex; /* Safari */
+//   -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+//   display: flex;
+//   flex-direction: row-reverse;
+//   background-color: #f5f5f5;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+

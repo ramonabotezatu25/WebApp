@@ -1,0 +1,28 @@
+$default-font-family: Calibri,
+Arial,
+Helvetica,
+sans-serif;
+
+$default-shadow: 4px 4px 3px rgba(170, 170, 170, 0.1);
+$default-shadow-color: rgba(170, 170, 170, 0.1);
+
+$default-red: rgba(255, 20, 10, 1);
+$default-green: rgba(106, 196, 70, 1);
+$default-orange: rgba(255, 184, 0, 1);
+$default-gray: rgba(197, 191, 183, 1);
+$accent-color: rgba(51, 63, 72, 1); // #333f48 DCG Grey
+$accent-color-focus: rgba(00, 121, 186, 1); // #0079ba DCG Blue
+$default-white: white;
+$background-light-gray: #333F48;
+$background-dark-gray: #131313;
+$scrollbar-gray: #AAAAAA;
+
+$sm-break: 575px;
+$md-break: 767px;
+$lg-break: 991px;
+$xl-break: 1200px;
+
+$breakpoint-tablet: 1100px;
+$breakpoint-medium: 1400px;
+
+$maxHeight-tablet: 1050px;
