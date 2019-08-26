@@ -1,3 +1,26 @@
-<p>
-  employees works!
-</p>
+<div>
+  <ngx-datatable  class="ngx-datatable" [rows]="row" [columns]="columns" [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50" [rowHeight]="50" [scrollbarV]="true" [sorts]="[{prop: 'name', dir: 'desc'}]">
+  
+      <ngx-datatable-column name="Employee" class='ngx-column'> 
+          <ng-template  class="ngx-row" ngx-datatable-cell-template let-row="row" >
+            {{row.employee}}
+          </ng-template>
+        </ngx-datatable-column>
+    
+        <ngx-datatable-column name='Project' class='ngx-column'>
+          <ng-template class="ngx-row" ngx-datatable-cell-template let-row="row" >
+            {{row.project}}
+          </ng-template>
+        </ngx-datatable-column>
+    
+    
+      <ngx-datatable-column name='Managers'  class='ngx-column'>
+        <ng-template  class="ngx-row" ngx-datatable-cell-template let-row="row">
+          {{row.manager}}
+        </ng-template>
+      </ngx-datatable-column>
+
+      
+   
+  </ngx-datatable>
+</div>

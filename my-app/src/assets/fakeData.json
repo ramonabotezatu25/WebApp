@@ -1,0 +1,45 @@
+{
+  "employee" : [
+  {
+    "firstname" : "Sorin",
+    "lastname": "Fratila",
+    "project" : "LXCA-security",
+    "manager" : "Diana Baiceanu"
+  }
+  {
+    "firstname" : "Ramona",
+    "lastname": "Botezatu",
+    "project" : "LXCO",
+    "manager" : "Bogdan Iorga"
+  }
+  {
+    "firstname" : "Florin",
+    "lastname": "Cristudor",
+    "project" : "ELLIE",
+    "manager" : "Ileana Petrisor"
+  }
+  {
+    "firstname" : "Valentin",
+    "lastname": "Paun",
+    "project" : "LXCO",
+    "manager" : "Bogdan Iorga"
+  }
+  {
+    "firstname" : "Andrada",
+    "lastname": "Cordescu",
+    "project" : "LXCA",
+    "manager" : "Diana Baiceanu"
+  }
+  {
+    "firstname" : "Luiza",
+    "lastname": "Mandici",
+    "project" : "LXCA",
+    "manager" : "Ileana Petrisor"
+  }
+
+
+
+
+]
+ 
+},
